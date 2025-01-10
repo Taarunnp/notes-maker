@@ -6,20 +6,16 @@ from transformers import pipeline
 import wave
 import contextlib
 
-# Function to download a YouTube video and extract audio
 def download_video(youtube_url, download_path="downloads"):
-    # Create the download directory if it doesn't exist
     if not os.path.exists(download_path):
         os.makedirs(download_path)
     
-    # Download the video
     yt = pytube.YouTube(youtube_url)
     video = yt.streams.filter(only_audio=True).first()
     audio_file_path = video.download(download_path)
     
     return audio_file_path
 
-# Function to extract audio from video
 def extract_audio_from_video(video_file_path):
     audio_file_path = video_file_path.replace(".mp4", ".wav")
     
