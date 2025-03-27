@@ -3,7 +3,7 @@ a simple yet powerful application designed to help users easily create notes fro
 Features:         
 Create and edit notes quickly       
 Organize notes into categories or tags         
-Simple and clean user interface        
+Simple and clean user interface         
 Lightweight and fast performance     
  
 
