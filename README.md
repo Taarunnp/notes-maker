@@ -6,4 +6,3 @@ Organize notes into categories or tags
 Simple and clean user interface           
 Lightweight and fast performance     
  
-   
