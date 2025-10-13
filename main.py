@@ -7,7 +7,7 @@ import wave
 import contextlib    
   
 def download_video(youtube_url, download_path="downloads"):
-    if not os.path.exists(download_path):
+    if not os.path.exists(download_path): 
         os.makedirs(download_path)
     
     yt = pytube.YouTube(youtube_url)
